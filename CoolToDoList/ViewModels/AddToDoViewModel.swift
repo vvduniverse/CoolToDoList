@@ -8,8 +8,10 @@
 import Foundation
 
 class AddToDoViewModel: ObservableObject {
+    
     @Published var name = ""
     @Published var completed = false
+    
     var id: String?
     
     var updating: Bool {
