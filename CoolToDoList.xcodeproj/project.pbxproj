@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84B6023227B6AADB00ACEA20 /* AddToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6023127B6AADB00ACEA20 /* AddToDoView.swift */; };
+		84B6023427B6AAF700ACEA20 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6023327B6AAF700ACEA20 /* ToDoModel.swift */; };
+		84B6023727B6AB2A00ACEA20 /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6023627B6AB2A00ACEA20 /* ModalType.swift */; };
+		84B6023927B6AB3D00ACEA20 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6023827B6AB3D00ACEA20 /* DataStore.swift */; };
+		84B6023C27B6AB7D00ACEA20 /* AddToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B6023B27B6AB7D00ACEA20 /* AddToDoViewModel.swift */; };
 		84E4154527B68AF000219C38 /* CoolToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4154427B68AF000219C38 /* CoolToDoListApp.swift */; };
 		84E4154727B68AF000219C38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4154627B68AF000219C38 /* ContentView.swift */; };
 		84E4154927B68AF100219C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E4154827B68AF100219C38 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84B6023127B6AADB00ACEA20 /* AddToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoView.swift; sourceTree = "<group>"; };
+		84B6023327B6AAF700ACEA20 /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+		84B6023627B6AB2A00ACEA20 /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		84B6023827B6AB3D00ACEA20 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		84B6023B27B6AB7D00ACEA20 /* AddToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewModel.swift; sourceTree = "<group>"; };
 		84E4154127B68AF000219C38 /* CoolToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E4154427B68AF000219C38 /* CoolToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolToDoListApp.swift; sourceTree = "<group>"; };
 		84E4154627B68AF000219C38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +42,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84B6023027B6AA9200ACEA20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84E4154627B68AF000219C38 /* ContentView.swift */,
+				84B6023127B6AADB00ACEA20 /* AddToDoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84B6023527B6AAFC00ACEA20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84B6023327B6AAF700ACEA20 /* ToDoModel.swift */,
+				84B6023627B6AB2A00ACEA20 /* ModalType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84B6023A27B6AB4200ACEA20 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84B6023827B6AB3D00ACEA20 /* DataStore.swift */,
+				84B6023B27B6AB7D00ACEA20 /* AddToDoViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		84E4153827B68AF000219C38 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				84E4154427B68AF000219C38 /* CoolToDoListApp.swift */,
-				84E4154627B68AF000219C38 /* ContentView.swift */,
+				84B6023027B6AA9200ACEA20 /* Views */,
+				84B6023527B6AAFC00ACEA20 /* Models */,
+				84B6023A27B6AB4200ACEA20 /* ViewModels */,
 				84E4154827B68AF100219C38 /* Assets.xcassets */,
 				84E4154A27B68AF100219C38 /* Preview Content */,
 			);
@@ -138,7 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E4154727B68AF000219C38 /* ContentView.swift in Sources */,
+				84B6023927B6AB3D00ACEA20 /* DataStore.swift in Sources */,
+				84B6023727B6AB2A00ACEA20 /* ModalType.swift in Sources */,
+				84B6023427B6AAF700ACEA20 /* ToDoModel.swift in Sources */,
 				84E4154527B68AF000219C38 /* CoolToDoListApp.swift in Sources */,
+				84B6023C27B6AB7D00ACEA20 /* AddToDoViewModel.swift in Sources */,
+				84B6023227B6AADB00ACEA20 /* AddToDoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
