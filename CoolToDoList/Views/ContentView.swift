@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//another some changes
+
 struct ContentView: View {
     
     @EnvironmentObject var dataStore: DataStore
