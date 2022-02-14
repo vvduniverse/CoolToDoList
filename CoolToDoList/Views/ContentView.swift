@@ -12,14 +12,14 @@ import SwiftUI
 struct ContentView: View {
     
     @EnvironmentObject var dataStore: DataStore
-    @State private var modelType: ModalType? = nil
+    @State private var modalType: ModalType? = nil
     
     var body: some View {
         NavigationView {
             List() {
                 ForEach(dataStore.toDos) { toDo in
                     Button {
-                        modelType = .update(toDo)
+                        modalType = .update(toDo)
                     } label: {
                         Text(toDo.name)
                             .font(.title3)
@@ -34,18 +34,18 @@ struct ContentView: View {
                 ToolbarItem(placement: .principal) {
                     Text("My ToDos")
                         .font(.largeTitle)
-                        .foregroundColor(.red)
+                        .foregroundColor(.purple)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        modelType = .new
+                        modalType = .new
                     } label: {
                         Image(systemName: "plus.circle.fill")
                     }
                 }
             }
         }
-        .sheet(item: $modelType) { $0 }
+        .sheet(item: $modalType) { $0 }
     }
 }
 
